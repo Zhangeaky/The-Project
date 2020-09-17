@@ -2,7 +2,7 @@
 
 基础数据类型
 
--  和崔
+-  
 
   ```c++
   //点云对象
@@ -41,24 +41,31 @@
   pcl::io::savePCDFileASCII ("存储路径", *msgptr); 
   ```
 
-  
-
 - 加载本地PCD 文件
 
   ```c++
   //声明PointCloud数据类型的指针
   pcl::PointCloud<pcl::PointXYZRGB>::Ptr pcl_clr_ptr(new pcl::PointCloud<pcl::PointXYZRGB>);
-  
   //根据声明的指针将PCD文件生成相应的对象模型
   pcl::io::loadPCDFile<pcl::PointXYZRGB>(fname, *pcl_clr_ptr)
   ```
 
-### 点云分割
+### 点云分割（目标检测）
 
-- RanSac
+- RanSac(采样一致性算法)
 
+  ```
+  地物分割
   ```
   
+- 点云去平面
+
+- 深度学习
+
+  ```
+  在复杂场景中简单的传统方法对点云进行语义分割难度太大，使用深度学习可能会比较方便
   ```
 
-- 点云去平面
+  
+  
+  
